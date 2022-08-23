@@ -1,28 +1,22 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
     fontFamily: {
       display: ["Open Sans", "sans-serif"],
       body: ["Open Sans", "sans-serif"],
     },
     extend: {
+      fontSize: {
+        14: "14px",
+      },
       backgroundColor: {
         "main-bg": "#FAFBFB",
-        "light-blue": "#03C9D7",
+        "main-dark-bg": "#20232A",
+        "secondary-dark-bg": "#33373E",
         "light-gray": "#F7F7F7",
-        "light-red": "#FB9678",
-        "icon-light-blue": "#E5FAFB",
-        "icon-light-orange": "rgb(255, 244, 229)",
-        "icon-light-red": "rgb(253, 243, 245)",
-        "icon-light-green": "rgb(235, 250, 242)",
-        "icon-green": "#00C292",
-        orange: "rgb(254, 201, 15)",
-      },
-      colors: {
-        "light-blue": "#03C9D7",
-        "icon-light-orange": "rgb(254, 201, 15)",
-        "icon-light-red": "rgb(228, 106, 118)",
-        "icon-light-green": "rgb(0, 194, 146)",
+        "half-transparent": "rgba(0, 0, 0, 0.5)",
       },
       borderWidth: {
         1: "1px",
@@ -41,6 +35,13 @@ module.exports = {
       },
       height: {
         80: "80px",
+      },
+      minHeight: {
+        590: "590px",
+      },
+      backgroundImage: {
+        "hero-pattern":
+          "url('https://demos.wrappixel.com/premium-admin-templates/react/flexy-react/main/static/media/welcome-bg-2x-svg.25338f53.svg')",
       },
     },
   },
