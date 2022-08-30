@@ -14,16 +14,16 @@ const Sidebar = () => {
     <div className='ml-3 h-screen'>
       {activeMenu && (<React.Fragment>
         <div className='flex justify-between items-center'>
-          <Link to='/' onclick={() => {}} 
+          <Link to='/' onClick={() => {}} 
             className='items-center flex mt-4 ml-3 gap-3 text-xl font-extrabold tracking-tight dark:text-white text-slate-900'>
             <SiShopware className='text-xl'/>
             <span className='pl-3'>Shoppy</span>
           </Link>
           <TooltipComponent content='Menu' position='BottomCenter'>
-            <buttom type='button' onClick={() => {}}
+            <button type='button' onClick={() => {}}
             className='text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden'>
             <MdOutlineCancel />
-            </buttom>
+            </button>
           </TooltipComponent>
           </div> 
           <div className='mt-10'>
