@@ -8,6 +8,9 @@ module.exports = {
       body: ["Open Sans", "sans-serif"],
     },
     extend: {
+      colors: {
+        "cyanl-100": "#03C9D7",
+      },
       fontSize: {
         14: "14px",
       },
