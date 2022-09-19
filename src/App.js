@@ -9,9 +9,10 @@ import { Navbar, Footer, Sidebar, ThemeSettings } from "./components";
 import {
   Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers,
   Kanban, Area, Bar, Pie, Line, Financial, ColorPicker, ColorMapping, Editor } from "./pages";
+import { useStateContext } from "./contexts/ContextProvider";
 
 function App() {
-  const activeMenu = true;
+  const { activeMenu, setActiveMenu } = useStateContext();
   return (
     <div>
       <BrowserRouter>
@@ -47,7 +48,7 @@ function App() {
             <Routes>
               {/* Dashboard */}
               <Route path="/" element={<Ecommerce />} />
-              <Route path="/ecomerce" element={<Ecommerce />} />
+              <Route path="/ecommerce" element={<Ecommerce />} />
 
               {/* Pages */}
               <Route path="/orders" element={<Orders />} />
