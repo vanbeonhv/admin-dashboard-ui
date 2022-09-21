@@ -1,13 +1,19 @@
 import React from "react";
 
-const Button = ({ name, color, bgcolor, customFunc }) => {
+const Button = ({ name, size, color, bgcolor, customFunc, borderRadius }) => {
   return (
-    <div
-      style={{ color: color, backgroundColor: bgcolor }}
+    <button
+      type="button"
+      style={{
+        color: color,
+        backgroundColor: bgcolor,
+        borderRadius: borderRadius,
+      }}
       onClick={customFunc}
+      className={`text-${size} p-3 hover:drop-shadow-xl outline-none`}
     >
       {name}
-    </div>
+    </button>
   );
 };
 
