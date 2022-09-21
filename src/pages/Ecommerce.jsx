@@ -4,7 +4,6 @@ import { Button, SparkLine, Stacked } from "../components";
 import { earningData, SparklineAreaData, dropdownData } from "../data/dummy";
 import { DropDownListComponent } from "@syncfusion/ej2-react-dropdowns";
 import { GoPrimitiveDot } from "react-icons/go";
-import { useStateContext } from "../contexts/ContextProvider";
 
 const DropDown = ({ currentMode }) => (
   <div className="w-28 border-1 border-color px-2 py-1 rounded-md">
@@ -24,8 +23,8 @@ const Ecommerce = () => {
   const { currentColor, currentMode } = useStateContext();
   return (
     <div className="mt-12">
-      <div className="flex justify-between items-center flex-wrap">
-        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-60 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-right">
+      <div className="flex justify-around items-center flex-wrap">
+        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-60 rounded-xl w-full 2xl:w-640 xl:w-full p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-right">
           <div className="flex justify-between items-center">
             <div>
               <p className="text-gray-400 font-bold">Total Users</p>
@@ -42,7 +41,7 @@ const Ecommerce = () => {
             />
           </div>
         </div>
-        <div className="flex m-3 gap-1 flex-wrap justify-between          items-center">
+        <div className="flex m-3 gap-1 flex-wrap justify-between lg:justify-around flex-grow items-center">
           {earningData.map((item) => (
             <div
               className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56  p-4 pt-9"
@@ -125,9 +124,9 @@ const Ecommerce = () => {
                   />
                 </div>
               </div>
-              <div>
-                <Stacked currentMode="blue" width="320px" height="360px" />
-              </div>
+            </div>
+            <div>
+              <Stacked currentMode="blue" width="320px" height="360px" />
             </div>
           </div>
         </div>
