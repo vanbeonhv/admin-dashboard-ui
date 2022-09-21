@@ -12,8 +12,20 @@ const initialState = {
 
 export const ContextProvider = ({ children }) => {
   const [activeMenu, setActiveMenu] = useState(true);
+  const [isClicked, setIsClicked] = useState(initialState);
+  const handleClick = (clicked) => {
+    setIsClicked({ ...initialState, [clicked]: true });
+  };
   return (
-    <StateContext.Provider value={{ activeMenu, setActiveMenu }}>
+    <StateContext.Provider
+      value={{
+        activeMenu,
+        setActiveMenu,
+        isClicked,
+        setIsClicked,
+        handleClick,
+      }}
+    >
       {children}
       {/* Means ContextProvider bọc cái gì vào thì cũng sẽ hiển thị ra cái đấy. Ko hiểu thì xem lại useContext của F8 */}
     </StateContext.Provider>

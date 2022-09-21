@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const Button = () => {
+const Button = ({ name, color, bgcolor, customFunc }) => {
   return (
-    <div>Button</div>
-  )
-}
+    <div
+      style={{ color: color, backgroundColor: bgcolor }}
+      onClick={customFunc}
+    >
+      {name}
+    </div>
+  );
+};
 
-export default Button
+export default Button;
