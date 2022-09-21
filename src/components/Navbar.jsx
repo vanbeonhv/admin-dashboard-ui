@@ -34,7 +34,14 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between relative p-2 mx-6">
-      <NavButton title="menu" color="blue" icon={<AiOutlineMenu />}></NavButton>
+      <NavButton
+        title="menu"
+        customFunc={() => {
+          setActiveMenu((prevActiveMenu) => !prevActiveMenu);
+        }}
+        color="blue"
+        icon={<AiOutlineMenu />}
+      ></NavButton>
       <div className="flex">
         <NavButton
           title="Cart"

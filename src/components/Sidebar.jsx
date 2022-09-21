@@ -13,7 +13,7 @@ const Sidebar = () => {
     "flex items-center m-2 gap-5 text-gray-700 pl-4 pt-3 pb-2.5 hover:bg-light-gray rounded-lg";
 
   return (
-    <div className="ml-3 h-screen">
+    <div className="ml-3 h-screen ">
       {activeMenu && (
         <React.Fragment>
           <div className="flex justify-between items-center">
@@ -22,10 +22,10 @@ const Sidebar = () => {
               onClick={() => {
                 setActiveMenu(false);
               }}
-              className="items-center flex mt-4 ml-3 gap-3 text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
+              className="items-center flex mt-4 ml-3 gap-3 text-xl font-extrabold tracking-tight dark:text-white text-slate-900 "
             >
-              <SiShopware className="text-xl" />
-              <span className="pl-3">Shoppy</span>
+              <SiShopware className="text-xl " />
+              <span className="">Shoppy</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
@@ -33,7 +33,7 @@ const Sidebar = () => {
                 onClick={() =>
                   setActiveMenu((prevActiveMenu) => !prevActiveMenu)
                 }
-                className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block " //md:hidden
+                className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden"
               >
                 <MdOutlineCancel />
               </button>

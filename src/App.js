@@ -29,7 +29,8 @@ function App() {
             </TooltipComponent>
           </div>
           {activeMenu ? (
-            <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white overflow-auto">
+            <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white overflow-hidden hover:overflow-auto drop-shadow-xl">
+              {/*hover:scrollbar-thin hover:scrollbar-thumb-cyanl-100 hover:scrollbar-track-cyanl-50 hover:scrollbar-thumb-rounded-full hover:scrollbar-track-rounded-full  */}
               <Sidebar />
             </div>
           ) : (

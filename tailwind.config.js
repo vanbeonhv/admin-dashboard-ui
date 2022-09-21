@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       colors: {
         "cyanl-100": "#03C9D7",
+        "cyanl-50": "#C6FFFF",
       },
       fontSize: {
         14: "14px",
@@ -49,5 +50,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
+  variants: {
+    scrollbar: ["rounded"],
+  },
 };
