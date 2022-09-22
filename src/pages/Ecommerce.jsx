@@ -24,7 +24,7 @@ const Ecommerce = () => {
   return (
     <div className="mt-12">
       <div className="flex justify-around items-center flex-wrap">
-        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-60 rounded-xl w-full 2xl:w-640 xl:w-full p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-right">
+        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-60 rounded-xl w-full  2xl:w-640 xl:w-full p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-right">
           <div className="flex justify-between items-center">
             <div>
               <p className="text-gray-400 font-bold">Total Users</p>

@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       display: ["Open Sans", "sans-serif"],
       body: ["Open Sans", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
     },
     extend: {
       colors: {
@@ -14,6 +15,7 @@ module.exports = {
       },
       fontSize: {
         14: "14px",
+        13: "13px",
       },
       backgroundColor: {
         "main-bg": "#FAFBFB",
